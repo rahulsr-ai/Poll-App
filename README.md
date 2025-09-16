@@ -1,6 +1,6 @@
 # 1. Clone repository
 git clone https://github.com/your-username/pollmaster.git
-cd poll-app
+cd Poll-App
 
 # 2. Backend setup
 cd backend
@@ -10,10 +10,13 @@ npm install
 DATABASE_URL="postgresql://username:password@localhost:5432/pollmaster_db" 
 PORT=5000
 
+
 # 3. Database setup (IMPORTANT!)
-Create a fresh postgrace database through pgAdmin pollmaster_db 
-npx prisma generate Then
+# Create a fresh PostgreSQL database through pgAdmin with name 'pollmaster_db'
+# Then use these commands:
+npx prisma generate
 npx prisma db push          # Push schema to database
+
 
 # 4. Frontend setup
 cd ../frontend
