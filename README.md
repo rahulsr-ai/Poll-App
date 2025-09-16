@@ -11,6 +11,7 @@ DATABASE_URL="postgresql://username:password@localhost:5432/pollmaster_db"
 PORT=5000
 
 # 3. Database setup (IMPORTANT!)
+Create a fresh postgrace database through pgAdmin pollmaster_db 
 npx prisma generate Then
 npx prisma db push          # Push schema to database
 
