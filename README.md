@@ -14,7 +14,7 @@ PORT=5000
 # 3. Database setup (IMPORTANT!)
 # Create a fresh PostgreSQL database through pgAdmin with name 'pollmaster_db'
 # Then use these commands:
-npx prisma generate
+npx prisma generate then
 npx prisma db push          # Push schema to database
 
 
@@ -24,8 +24,8 @@ npm install
 
 # 5. Start both servers
 # Terminal 1 - Backend
-cd backend
-npm install 
+cd backend -> 
+npm install -> 
 nodemon src/server.js
 
 # Terminal 2 - Frontend (Vite)
